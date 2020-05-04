@@ -1,0 +1,31 @@
+.container {
+    background-color: rgb(255, 240, 242);
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 1px black solid;
+    width: 20%;
+    overflow: hidden;
+}
+#mainHeader {
+    background-color: rgba(165, 11, 19, 0.623);
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+#formData {
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    padding: 10px;
+
+}
+.registrationLabel {
+    text-align: left;
+    margin-left: 21px;
+}
+.signInlabel {
+    text-align: center;
+}
+#age {
+    width: 30px;
+}

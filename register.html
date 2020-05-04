@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DRegistration</title>
+    <link rel="Stylesheet" href="css\Styles.css">
+</head>
+<body>
+    <div class="container">
+        <header id="mainheader">
+            Have an account?
+            <a href="register.html"> Log in</a>
+        </header>
+
+        <Section>
+            <form onsubmit="alert(name.Value);return false">
+                <div id="formData">
+
+                    <!-- Name Field Start -->
+                    <div class="registrationLabel">
+                        <label>Name</label><br>
+                        <Input type="text" name="firstname" placeholder="Enter first name">
+                        <Input type="text" name="lastname" placeholder="Enter last name"> 
+                    </div>
+                    </div>
+                    <!--Name Field End-->
+
+                    <!--Name Field Start-->
+                    <div>
+                        <div>
+                            <label>Age</label>
+                            <input type="number" name="age">
+                        </div>
+                    </div>
+                    <!--Age Field End-->
+
+                    <!--Email Field Start-->
+                    <div>
+                        <div class="registrationLabel">
+                            <label>Email</label><br>
+                            <input type="email" name="email" placeholder="">
+                        </div>
+                    </div>
+                    <!--Email Failed End-->
+
+                    <!--Username Field Start-->
+                    <div>
+                        <div class="registrationLabel">
+                            <label>Password</label><br>
+                            <input type="text" name="userName" placeholder="Enter Username">
+                        </div>
+                    </div>
+                    <!--Username Field End-->
+
+                    <!--Password Field Start-->
+                    <div>
+                        <div class="registrationLabel">
+                            <label>Password</label><br>
+                            <input type="password" name="password" placeholder="Enter Password">
+                            <input type="password" name="password" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <!-- Password Field End-->
+                    <br>
+                    <input type="submit" name="submit">
+                    <br>
+
+
+            </form>
+        </Section>
+
+    </div>
+    
+</body>
+</html>
