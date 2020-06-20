@@ -2,7 +2,7 @@
     This style will contol the look of ul elements on the page.
 */
 ul {
-    background-color: #333333;
+    background-color:burlywood;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@ li, a {
     that is inside of 'li' elements, based on the cursors hover state.
 */
 li a:hover {
-    background-color: #111111;
+    background-color: #d7dac6;
 }
 a {
     text-decoration: none;
@@ -53,14 +53,15 @@ a {
     This style effects the element with the id of #innerDivBodyLeft.
 */
 #innerDivBodyLeft_Default {
-    background-color: cadetblue;
+    background-color:rgb(30, 30, 78);
     width: 20%;
 }
 /*
     This style effects the element with the id of #innerDivBodyRight.
 */
 #innerDivBodyRight {
-    background-color: blue;
+    background-color: burlywood;
+    background-image: url(https://cdn.pixabay.com/photo/2020/04/12/07/15/trees-5033072_960_720.jpg);
     width: 80%;
 }
 #divLeft_Default{
