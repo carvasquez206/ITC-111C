@@ -3,46 +3,62 @@
         The function creates 2 links and places them into the teal colored div.
         The text in the blue div is also changed.
     */
-function changeLinkText(lnk) {
+   function changeLinkText(lnk) {
     // Condition checks which link was click by passing value to the 'lnk' variable
     // the visibility of the corresponding div is updated accordingly. 
-    if (lnk == 'home'){
+    switch (lnk){
+        case 'home' :
         document.getElementById('divLeft_Default').style.display = "block";
         document.getElementById('divLeft_CELinks').style.display = "none";
         document.getElementById('divLeft_ALinks').style.display = "none";
         document.getElementById('divLeft_RLinks').style.display = "none";
-        document.getElementById('divRight').innerHTML = "Home Link Clicked. Default Text Display.";
+        document.getElementById('divRight').innerHTML = "Home link clicked. Default text displayed.";
         document.getElementById('ls_Heading').innerHTML = "ITC-111";
         document.getElementById('rs_Heading').innerHTML = "Intro to Programming <br>w/HTML, CSS & JavaScript";
-
-    }else if (lnk == 'classEx'){
+        break;
+    
+        case 'classEx' :
         document.getElementById('divLeft_Default').style.display = "none";
         document.getElementById('divLeft_CELinks').style.display = "block";
         document.getElementById('divLeft_ALinks').style.display = "none";
         document.getElementById('divLeft_RLinks').style.display = "none";
-        document.getElementById('divRight').innerHTML = "Default description for Class Exercise Link.";
+        document.getElementById('divRight').innerHTML = "Default description for Class Excercise Link.";
         document.getElementById('ls_Heading').innerHTML = "Class Exercises";
         document.getElementById('rs_Heading').innerHTML = "Exercise Description";
+        break;
 
-    }else if (lnk == 'assign'){
+        case 'assign' :
+        document.getElementById('divLeft_Default').style.display = "none";
+        document.getElementById('divLeft_CELinks').style.display = "none";
+        document.getElementById('divLeft_ALinks').style.display = "block";
+        document.getElementById('divLeft_RLinks').style.display = "none";
+        document.getElementById('divRight').innerHTML = "Description for Assignments Link.";
+        document.getElementById('ls_Heading').innerHTML = "Assignments";
+        document.getElementById('rs_Heading').innerHTML = "Assignment Brief";
+        break;
+        
+        case'resource' :
         document.getElementById('divLeft_Default').style.display = "none";
         document.getElementById('divLeft_CELinks').style.display = "none";
         document.getElementById('divLeft_ALinks').style.display = "none";
         document.getElementById('divLeft_RLinks').style.display = "block";
-        document.getElementById('divRight').innerHTML = "Default description for Assignments Link.";
-        document.getElementById('ls_Heading').innerHTML = "Assignments";
-        document.getElementById('rs_Heading').innerHTML = "Assignment Brief";
-
-    }else{
+        document.getElementById('divRight').innerHTML = "Description for Resources Link.";
+        document.getElementById('ls_Heading').innerHTML = "Resources";
+        document.getElementById('rs_Heading').innerHTML = "Resource Examples";
+        break;
+    
+        default:
         document.getElementById('divLeft_Default').style.display = "block";
         document.getElementById('divLeft_CELinks').style.display = "none";
         document.getElementById('divLeft_ALinks').style.display = "none";
+        document.getElementById('divLeft_RLinks').style.display = "none";
         document.getElementById('divRight').style.display = "none";
+    
     }
     // The innerHTML of the div to the right is also changed
-    document.getElementById('divRight').innerHTML = 'Content for the "Link 1" link.';
+    //document.getElementById('divRight').innerHTML = 'Content for the "Link 1" link.';
     // Any of an elements properties can be changed this way. Here the color is changed.
-    document.getElementById('divRight').style.color = 'red';
+    //document.getElementById('divRight').style.color = 'red';
 }
 /*
     This function changed the text displayed by an element/tag. It takes a parameter 'txt'
